@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-class NavBar extends Component {
-  render() {
-    return (
-        <React.Fragment>
-          <h1>Hello</h1>
-          <p>h2</p>
-        </React.Fragment>
-        
-    )
-  }
+import NavBar from "./NavBar";
+import  ShoppingCart  from "./ShoppingCart";
+export default class App extends
+    Component {
+    render() {
+        return (
+            <>
+                <NavBar />
+                <ShoppingCart />
+            </>
+
+        )
+    }
 }
-export default NavBar;
